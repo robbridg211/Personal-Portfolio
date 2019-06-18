@@ -1,0 +1,9 @@
+{
+    "script": "bin/www",
+    "watch": true,
+    "ignore_watch": ["./config/secrets"],
+    "watch_options": {
+        "followSymlinks": false
+    },
+    "name": ""
+}
