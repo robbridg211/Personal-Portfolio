@@ -1,0 +1,402 @@
+*, html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+/* HEADER STYLES */
+
+#header {
+    padding: 15px 0px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    opacity: .85;
+    z-index: 99;
+}
+#avatar {
+    padding-left: 50px;
+}
+#avatar img {
+    display: inline-block;
+    width: 75px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+#avatar h2 {
+    display: inline-block;
+    cursor: default;
+    vertical-align: middle;
+    color: whitesmoke;
+    padding: 15px;
+}
+#links {
+    margin-right: 20px;
+}
+#links ul li {
+    display: inline-block;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+#links ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    border-bottom: 0px solid white;
+    transition: border 150ms, padding 150ms;
+}
+#links ul li a:hover {
+    font-weight: bolder;
+    border-bottom: 3px solid royalblue;
+    padding-bottom: 15px;
+}
+#email-button {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+#email-button a:hover {
+    background-color: royalblue;
+    color: whitesmoke;
+    box-shadow: 0px 15px 20px rgba(245, 245, 245, 0.406);
+    transform: translateY(7px);
+}
+
+/* LANDING STYLES */
+
+#landing {
+    background-image: url(https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?cs=srgb&dl=forest-hd-wallpaper-landscape-129105.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 100px 20px;
+}
+.profCard {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    transform: 1s;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    padding: 0px 25px;
+    background-color: rgba(211, 211, 211, 0.534);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+/* ANIMATION CSS for ABOUT SECTION */
+
+.profCard_front {
+    transform: rotateY(0deg);
+    height: auto;
+}
+.profCard_back {
+    transform: rotateY(180deg);
+    display: inline-block;
+    text-align: center;
+    padding: inherit;
+    height: auto;
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.534);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+.profCard_back .info {
+    width: 50%;
+    vertical-align: top;
+}
+.profCard_back .info p {
+    text-align: left;
+    padding: 0 20px;
+}
+.responsive-summary {
+    visibility: hidden;
+}
+/* *************************** */
+
+.profCard img, .profCard_back img {
+    height: 350px;
+    vertical-align: top;
+    margin: 60px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgb(46, 46, 46);
+}
+strong, hr {
+    margin: 5px 0px;
+}
+.info {
+    width: 60%;
+    margin: 0 10px;
+    padding: 10px 0;
+    display: inline-block;
+}
+#skills {
+    margin: 15px;
+}
+.socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: center;
+}
+.socialLinks a {
+    text-decoration: none;
+    color: black;
+    transition: color 200ms;
+}
+.socialLinks a:hover, .socialLinks i:hover {
+    color: rgb(28, 63, 168);
+    font-weight: bolder;
+}
+.socialLinks a:active {
+    color: rgb(50, 21, 21);
+}
+#media{
+    margin: 0 15px;
+}
+
+
+/* PROJECTS  */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+.projects h1 {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid black;
+    color: rgb(28, 63, 168);
+}
+.proj {
+    display: flex;
+    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    background-color: rgb(240,240,240);
+}
+.projInfo {
+    padding: 20px;
+}
+.projInfo h2 {
+    border-bottom: 5px double rgb(80,80,80);
+    margin-bottom: 15px;
+}
+.proj img {
+    width: 40%;
+    align-self: flex-start;
+}
+.proj-link {
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(royalblue, rgb(26, 61, 167));
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgb(46, 46, 46);
+}
+.proj-link a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+}
+.far.fa-eye {
+    padding: 0 2px;
+    color: whitesmoke;
+}
+.proj-link:hover {
+    background-image: linear-gradient(to right, royalblue 0%, rgb(26, 61, 167) 51%, royalblue 100%);
+}
+
+
+/* CONTACTS STYLES */
+
+#contact-container {
+    width: 100%;
+    background-image: url(../assets/computer.jpg);
+    background-size: cover;
+    padding: 50px 0;
+}
+#contact-form form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.739);
+    padding: 25px;
+}
+#contact-container h1 {
+    margin-bottom: 20px;
+}
+#contact-form form input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 14pt;
+    cursor: pointer;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    outline: none;
+}
+#contact-form button:hover {
+    background-image: linear-gradient(royalblue, rgb(28, 63, 168));
+}
+
+#contact-form {
+    width: 50%;
+    margin: 0 auto;
+}
+matInput {
+    color: white;
+}
+.submission-complete {
+    background-color: rgba(65, 105, 225, 0.831);
+    color: white;
+    height: 300px;
+    border-radius: 10px;
+}
+.submission-complete h2, .submission-complete h3 {
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+}
+.submission-complete img {
+    width: 110px;
+    margin: 0 auto;
+    display: inherit;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    cursor: default;
+}
+footer p {
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 960px) {
+    #email-button {
+        text-transform: none;
+        letter-spacing: normal;
+        margin: 25px auto;
+    }
+    #links {
+        margin: 0 auto;
+    }
+    .profCard {
+        text-align: center;
+        height: auto;
+    }
+    .profCard_back {
+        height: auto;
+    }
+    .profCard_back .info {
+        width: 100%;
+    }
+    .profCard_back .info p {
+        display: none;
+    }
+    .responsive-summary {
+        visibility: visible;
+        padding-bottom: 20px;
+    }
+    #contact-form{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #avatar img {
+        width: 40px;
+    }
+    #header h2, #links {
+        margin: auto;
+    }
+    #links ul li a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 12px;
+    }
+    #landing {
+        height: 60vh;
+    }
+    .profCard {
+        width: 90%;
+        padding: 20px;
+        min-height: 300px;
+        background-color: transparent;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    .profCard_front {
+        background-color: rgba(211, 211, 211, 0.534);
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px black;
+        margin-top: 60px;
+    }
+    .profCard_back {
+        margin-top: 60px;
+    }
+    #skills {
+        display: none;
+    }
+    #media {
+        padding-top: 25px;
+    }
+    .socialLinks {
+        padding-top: 25px;
+    }
+    .info {
+        margin: 0px;
+        width: 90%;
+    }
+    .profCard img {
+        height: 180px;
+    }
+    .socialLinks a {
+        margin: 0 5px;
+    }
+    .projects {
+        padding: 140px 20px 20px 20px;
+    }
+    .proj {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .proj img {
+        margin: auto;
+        width: 100%;
+    }
+    .projInfo {
+        text-align: center;
+    }
+    .projInfo h2 {
+        border-bottom: none;
+    }
+    .projInfo p {
+        display: none;
+    }
+}
