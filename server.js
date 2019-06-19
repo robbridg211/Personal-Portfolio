@@ -87,8 +87,8 @@ app.post('/sendmail', (req, res) => {
 require('./server/config/routes')(app);
 
 
-app.listen(8000, function() {
-    console.log("listening on port 8000");
+app.listen(6789, function() {
+    console.log("listening on port 6789");
    });
 
 
