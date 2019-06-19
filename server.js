@@ -4,8 +4,10 @@ var app = express();
 
 
 
-var config = require("./config/secrets");
-var emailPassword = config.emailPassword;
+// var config = require("./config/secrets");
+// var emailPassword = config.emailPassword;
+require('dotenv').config({path: path.join(__dirname, '.env')})
+var emailPassword = process.env.DB_PASS
 
 
 //FORM DATA server side
