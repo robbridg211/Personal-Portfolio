@@ -82,13 +82,13 @@ app.post('/sendmail', (req, res) => {
     });
   });
 
-
+//server folder with routes/controllers/modules (backend) - deleted
 //brings everything necessary over to routes.js
-require('./server/config/routes')(app);
+// require('./server/config/routes')(app);
 
 
-app.listen(6789, function() {
-    console.log("listening on port 6789");
+app.listen(8000, function() {
+    console.log("listening on port 8000");
    });
 
 
